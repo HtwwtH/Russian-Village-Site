@@ -1,0 +1,48 @@
+  
+
+
+.main_villagers_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.villagers{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.villagers_item {
+    width: 100%; 
+    /* text-align: center; */
+    margin-bottom: 15px;
+}
+
+.villagers_item img{
+    width: 100%;
+    min-width: 100px; 
+    max-width: 184px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 15px;
+    -webkit-transition-duration: var(--photoboxAnimationDuration, .8s);
+    transition-duration: var(--photoboxAnimationDuration, .8s);
+}
+.villagers_item img:hover{
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    -webkit-transition-duration: var(--photoboxAnimationDuration, .8s);
+    transition-duration: var(--photoboxAnimationDuration, .8s);
+  }
+
+.ul_style{
+    margin-top: 10px;
+}
+.ul_style li{
+    font-size: 20px;
+}

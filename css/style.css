@@ -1,0 +1,231 @@
+@import "reset.css";
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap);
+
+html {
+    scroll-behavior: smooth;
+    }
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+h1{
+    color: #867169;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h2{
+    color: #867169;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+p, li{
+    color: #8e7a72;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.ul_style li:before {
+    padding-right: 5px;
+    font-weight: bold;
+    color: #b5a9a45e;
+    content: "\2714";
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.ul_style li:hover:before {
+    color: #8e7a72;
+}   
+
+header, footer, section{
+    min-width: 300px;
+    width: 100%;
+    background: #6e625d;
+}
+
+.topline{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.logo{
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.botline{
+    min-width: 300px;
+    width: 100%;
+    background: #fbfaf3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    margin: auto;
+    padding: 15px 0 20px;
+}
+
+.topnav{
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.topnav a{
+    color: #867169;
+    margin: 0 15px;
+    -webkit-transition: border-bottom .1s ease-in-out;
+    transition: border-bottom .1s ease-in-out;
+    outline: none;
+}
+
+.topnav a:not(:last-child):hover{
+    border-bottom: 2px solid #867169;
+    -webkit-transition: border-bottom .1s ease-in-out;
+    transition: border-bottom .1s ease-in-out;
+}
+
+.topnav .icon{
+    display: none;
+    outline: none;
+}
+
+section.main_content{
+    background: #fbfaf3; 
+}
+
+footer nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+footer nav a{
+    color: #fbfaf3;
+    margin: 0 15px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    -webkit-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+}
+
+footer nav a:hover{
+    color: #e6ded6;
+    -webkit-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+}
+
+.footer_logo{
+    text-align: center;
+}
+.footer_logo img{
+    width: 500px;
+}
+
+.social{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.social a{
+    margin-right: 10px;
+    outline: none;
+}
+/* .social a:first-child{
+    margin-left: 40px;
+} */
+.social img{
+    width: 60px; 
+    -webkit-transition-duration:  var(--photoboxAnimationDuration, .8s); 
+    transition-duration: var(--photoboxAnimationDuration, .8s);
+}
+.social img:hover{
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    -webkit-transition-duration: var(--photoboxAnimationDuration, .8s);
+    transition-duration: var(--photoboxAnimationDuration, .8s);
+}
+footer p{
+    text-align: center;
+    color: #fbfaf3d2;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .topnav a:not(:first-child){
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        display: block;
+        outline: none;
+    }
+    nav{
+        width: 100%;
+    }
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+        outline: none;
+    }
+    .topnav.responsive a{
+        display: block;
+        float: none;
+        text-align: left;
+        -webkit-transition: transform .1s ease-in-out;
+        transition: transform .1s ease-in-out;
+    }
+    .topnav.responsive a:not(:last-child):hover{
+        border-bottom: none;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+        -webkit-transition: transform .1s ease-in-out;
+        transition: transform .1s ease-in-out;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+    footer nav{
+        flex-wrap: wrap;
+    }
+}
